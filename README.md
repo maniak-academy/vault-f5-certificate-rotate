@@ -40,3 +40,10 @@ vault write pki/config/urls \
     issuing_certificates="$VAULT_ADDR/v1/pki/ca" \
     crl_distribution_points="$VAULT_ADDR/v1/pki/crl"
 ```
+
+
+vault read -format=json auth/approle/role/web-certs/role-id | jq -r '.data.role_id' > roleID
+vault write -f -format=json auth/approle/role/web-certs/secret-id | jq -r '.data.secret_id' > secretID
+vault agent -config=agent-config.hcl -log-level=debug
+
+vault write pki_int/issue/example-dot-com common_name="test.example.com" ttl="24h"

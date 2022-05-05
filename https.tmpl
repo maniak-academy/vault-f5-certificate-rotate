@@ -9,44 +9,11 @@
         "id": "123abc",
         "label": "Demo Application",
         "remark": "HTTPS with Predictive-Node Pool",
-        "Demof5": {
+        "Common": {
             "class": "Tenant",
-            "HTTPS": {
+            "Shared": {
                 "class": "Application",
-                "template": "https",
-                "serviceMain": {
-                    "class": "Service_HTTPS",
-                    "virtualAddresses": [
-                        "10.0.0.200"
-                    ],
-                    "pool": "web_pool",
-                    "virtualPort": 8080,
-                    "serverTLS": "webtls"
-                },
-                "web_pool": {
-                    "class": "Pool",
-                    "loadBalancingMode": "predictive-node",
-                    "monitors": [
-                        "http"
-                    ],
-                    "members": [
-                        {
-                            "servicePort": 80,
-                            "serverAddresses": [
-                                "10.0.0.171",
-                                "10.0.0.172"
-                            ]
-                        }
-                    ]
-                },
-                "webtls": {
-                    "class": "TLS_Server",
-                    "certificates": [
-                        {
-                            "certificate": "webcert"
-                        }
-                    ]
-                },
+                "template": "shared",
                 "webcert": {
                     "class": "Certificate",
                     "label": "Demo Webcert",

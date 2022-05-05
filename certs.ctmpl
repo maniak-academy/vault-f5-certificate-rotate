@@ -2,22 +2,22 @@
 [
     {
         "op": "replace",
-        "path": "/Demof5/HTTPS/webcert/remark",
+        "path": "/Common/Shared/webcert/remark",
         "value": "Updated on {{ timestamp }}"
     },
     {
         "op": "replace",
-        "path": "/Demof5/HTTPS/webcert/certificate",
+        "path": "/Common/Shared/webcert/certificate",
         "value": "{{ .Data.certificate | toJSON | replaceAll "\"" "" }}"
     },
     {
         "op": "replace",
-        "path": "/Demof5/HTTPS/webcert/privateKey",
+        "path": "/Common/Shared/webcert/privateKey",
         "value": "{{ .Data.private_key | toJSON | replaceAll "\"" "" }}"
     },
     {
         "op": "replace",
-        "path": "/Demof5/HTTPS/webcert/chainCA",
+        "path": "/Common/Shared/webcert/chainCA",
         "value": "{{ .Data.issuing_ca | toJSON | replaceAll "\"" "" }}"
     }
 ]
