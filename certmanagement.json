@@ -1,0 +1,29 @@
+
+{
+    "class": "AS3",
+    "action": "deploy",
+    "persist": true,
+    "declaration": {
+        "class": "ADC",
+        "schemaVersion": "3.0.0",
+        "id": "123abc",
+        "label": "Automate certificate lifecycle",
+        "remark": "Automate certificate lifecycle",
+        "Common": {
+            "class": "Tenant",
+            "Shared": {
+                "class": "Application",
+                "template": "shared",
+                "webcert": {
+                    "class": "Certificate",
+                    "label": "Demo Webcert",
+                    "remark": "Initialize",
+                    "certificate": "-----BEGIN CERTIFICATE-----\nMIIDZjCCAk6gAwIBAgIUHpT1NrZHZzvhkS7dupOkZEXjQA4wDQYJKoZIhvcNAQEL\nBQAwLTErMCkGA1UEAxMiZXhhbXBsZS5jb20gSW50ZXJtZWRpYXRlIEF1dGhvcml0\neTAeFw0yMjA1MDUxNTM5NDRaFw0yMjA1MDUxNTQwNDRaMBsxGTAXBgNVBAMTEHRl\nc3QuZXhhbXBsZS5jb20wggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDE\nN272WapgJxGjkL/nKOqrTYL8GU5V3dxQF4qvq60jBUyPTu/t0mcsGHFsf1Wj6AST\nmM6Ub4JYLyJnq30EKUaZ5vBUkdRbVouu/sBGLmV+4g323MLz1lYgr0xKwiZWWcQy\nDU426iZLbL0V7ejA2pRBfrjiQo38bFcYhXH5b87UQvcVzsGPmAoUoPAG6+7FwzLA\nnecCtXqp7Xb2RDOE0ItjemP9kfIGX+7t7Jl8gqJq1F/+0je6Z+Wl/fpG9VsA1LAw\nvxpCruTRCq7aq4S/wwVcE1Kl41k9Iv3ItvwgJ2pVE+mfz3GbCmu2qz3UyC6Z6eFE\ncpNGaaLuU0m2Y8WHm1BRAgMBAAGjgY8wgYwwDgYDVR0PAQH/BAQDAgOoMB0GA1Ud\nJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjAdBgNVHQ4EFgQUi5eTdtd275etlfq+\nx6d4bJLKNpYwHwYDVR0jBBgwFoAUAjcZzjgoZJ2y38BFo8PNo4Q+oHUwGwYDVR0R\nBBQwEoIQdGVzdC5leGFtcGxlLmNvbTANBgkqhkiG9w0BAQsFAAOCAQEABWqaC7H5\nc5zhYAYwO4nPXx1IQIfBc2m/4/ZiKGR3/katpcSRKpYdxKdh2jJiEoV0tC5ghS0y\n6urIE/fvgyrRJ+zifbP9KKGLcM3CBUcY+CtQ3oXdiUlbpYyKp1IihUT21i7rSUji\n7ilZAdRqvj4KK4ZyTj6m8xDzNSdEkTlbR39wfaMPBJ4Ap4QE0OztEE8u6hpOjqPF\ns6GXlTj5FOkBP0Yauho7D0GjAyEsH9dmjVo2ye/OAoqqE78Byl3n861OoION70Zq\nDcZ42eOCpXy3ot0nwjAxeiK6pJl0rM0YNwZgr8bIGUkRHmN9zmsDXzwWZeNdGARF\naSp1OcO5D8o80w==\n-----END CERTIFICATE-----",
+                    "privateKey": "-----BEGIN RSA PRIVATE KEY-----\nMIIEpAIBAAKCAQEAxDdu9lmqYCcRo5C/5yjqq02C/BlOVd3cUBeKr6utIwVMj07v\n7dJnLBhxbH9Vo+gEk5jOlG+CWC8iZ6t9BClGmebwVJHUW1aLrv7ARi5lfuIN9tzC\n89ZWIK9MSsImVlnEMg1ONuomS2y9Fe3owNqUQX644kKN/GxXGIVx+W/O1EL3Fc7B\nj5gKFKDwBuvuxcMywJ3nArV6qe129kQzhNCLY3pj/ZHyBl/u7eyZfIKiatRf/tI3\numflpf36RvVbANSwML8aQq7k0Qqu2quEv8MFXBNSpeNZPSL9yLb8ICdqVRPpn89x\nmwprtqs91MgumenhRHKTRmmi7lNJtmPFh5tQUQIDAQABAoIBAEIj2WBq6xZMNRLo\nePdngGrLzupBcXlaNqg8tz/t44eZgqwP1KpasPJZLup+pZSBYgGKkZ/RUqN9B+Dg\nGlzruOOpx7sKCQXcz2rmblN50jaJ5mEfGwvsZM3RqSrN9PRIf+zLNWEnXk8wUTBy\nKHHRfAXzvEhwXMIIlvcqDDgjaxl6/aupuy100KgnZ5xViBu0n9/11fNTARRx4UMx\nC1LOAGg36YucfOXSQtj//2vNWZd9rbGQDnyzFlxFVxsJFKTC5BbyanDBpz8rTIEU\neiqW/gWP5hDEkj/u4gfjl6x1rs1V7zhUaCYZQsYLGQK2Zy7BRskAco8+Jn9xkqDy\nbY2+Sz0CgYEA8IVOE8oKCWcsFNY8eGuRnO4WulfWZ0/QOVlrgAL1PpMT70MMkzPe\nXP980fRjb1eYBBfRCYORaMEJg6NWsDAv4HGoA5SZmvqsN2A47Djvkdgy3YPrFpIe\njGmbn6jUGTMERXXmsJdj/fYHetNHi99TFZQ3RAulH9i16MGR5buxFYMCgYEA0Ngy\nE4oDcEBWz2VsNaPIh4btr8/WyQHMnJ0h9RCTcwe4PP5n1lGPUViWpGLnCZQtVpeR\nnj4M/8gRhdmzagySrWZ0veYoklA/8lKnN0yIyp5zMc7Kz3YsLhSEOt7jGmaTL8ol\nkILFO3SHQ+IL8/ZApxDUg3xB2As+Bz6IfY83bpsCgYEAw0jI4wJo8ceGIAjuIivc\nl5ksdPH6j/larCWxRcehDcRnLB25aQ91HPcHhoSx82YgdDpOLDZZ6r7JFcuaCAWn\n6cj+TKHrscyT5YZH0WxM/5KVgguo5bOQABuDErgGNcuZTTh0LK9OrZWD7zL6ZVPW\n5q9ny+TUli3jTO9VoTyqhDcCgYBHl3VDIXKgTk3z9q6rjKO3YdelBzh323gK0ArN\n+YqyShksP4HVBEx+9EFfxM+yhusr3fV7K4ZFQI5RNhm85uZ5LsAiQP3zejMRnKfZ\n2xChdMPEdUEs8TOf8ESL8dAkQrl+DmvmKA34na+o45p5XRc4rhpLoJLpvqDa1uLv\nN+MmtQKBgQDnKY7z6JKs7MI/aveI5rro5lclYgyN1XuHbQi6XJWGica9+1VT/yRW\n3I/xxOp/myy5S0e0dBBlp41c+H6Pk26qfpSZg2+qYC2RT73sry1OjsIEgx2Q6Nwd\nrsJXOeGtmUQResIqfOa9zxcz8HnxHV1DyIP8KcnhRFUxW4JPFN0Vsg==\n-----END RSA PRIVATE KEY-----",
+                    "chainCA": "-----BEGIN CERTIFICATE-----\nMIIDrjCCApagAwIBAgIUOKW2jRSzKR2vVUP+KBxTiP8D0kYwDQYJKoZIhvcNAQEL\nBQAwFjEUMBIGA1UEAxMLZXhhbXBsZS5jb20wHhcNMjIwNTA0MTcyMDUzWhcNMjcw\nNTAzMTcyMTIzWjAtMSswKQYDVQQDEyJleGFtcGxlLmNvbSBJbnRlcm1lZGlhdGUg\nQXV0aG9yaXR5MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAyVmplqF9\nhZx8hSYUZnYJRw225+GY8v38j4xjRO4QOvsfX6XCSbJNdTweNMY8cmbxtfpA2xjU\nQtCKOqW4hIvAXppa8TINzZo88U24iCMsXYcjya0ldxroF5k4uW2UFog0v5KbdRGe\nIMNNEd9fBQZoOvT9LtW+Pu/3172WWT/DXSKrPtImMPSaVz13xj20Ik9W6mz2ZR/k\nwtMpBgMwqgc1CiBXVFwxN7aB7GhWhSbzX5l0n2T3ORwx6z3+21FDRLoBg8Xcmxo8\nEN2J0sBlVi0SlT6lnFqKdQVAt04zyn/HD6YgV41Q66abEzTB8t0H4VZfmVo01KKh\nUwITvILaCW3efQIDAQABo4HcMIHZMA4GA1UdDwEB/wQEAwIBBjAPBgNVHRMBAf8E\nBTADAQH/MB0GA1UdDgQWBBQCNxnOOChknbLfwEWjw82jhD6gdTAfBgNVHSMEGDAW\ngBQIQDz3EWrJxUuEBi7DaGqnoStVNjA/BggrBgEFBQcBAQQzMDEwLwYIKwYBBQUH\nMAKGI2h0dHA6Ly8xOTIuMTY4Ljg2LjY5OjgyMDAvdjEvcGtpL2NhMDUGA1UdHwQu\nMCwwKqAooCaGJGh0dHA6Ly8xOTIuMTY4Ljg2LjY5OjgyMDAvdjEvcGtpL2NybDAN\nBgkqhkiG9w0BAQsFAAOCAQEAlxSGZJtOGHgx59OfRn1pQu2W/AkH1gxqyWypHvYM\nD6gbQHf+GhklfibkwAtCcy1QAYwh9W76xAwKG/nzMjKg2yqjjg+e+4DJOTQx9Ej3\nQgeGsjQHDyUTFWPEOCuVYHrhSrke9idRj4KV/i4WekQSW137QerAJJYfI9jRwnUk\n7JOScgO57mCYfDDzjNoVS8ba3JmNOwd46CkmL9sxXmFn00KUju72+unyQ0W0rZD/\n/0V1D7t5meYYgEDU5y72m4/bL6u3P2MeC0jIFmp9EVMF4dWknTACYkLe4beVkYx4\nTEzfENWiOxKIclzaELZwYtYLMAbWoPqZY/DL/LR7AKjC6w==\n-----END CERTIFICATE-----"
+                }
+            }
+        }
+    }
+}
+
