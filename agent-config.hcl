@@ -28,6 +28,6 @@ template {
 }
 
 template {
-    source = "./https.tmpl"
-    destination = "./https.json"
+    source = "./certmanagement.tmpl"
+    destination = "./certmanagement.json"
 }
