@@ -7,8 +7,16 @@ Visit my artice for a how to guide https://maniakacademy.medium.com/using-hashic
 
 to do 
 
+
+vault auth enable approle
+vault policy write cert-policy cert-policy.hcl
+vault write auth/approle/role/web-certs policies="cert-policy
+
 vault read -format=json auth/approle/role/web-certs/role-id | jq -r '.data.role_id' > roleID
 vault write -f -format=json auth/approle/role/web-certs/secret-id | jq -r '.data.secret_id' > secretID
 
-
 vault agent -config=agent-config.hcl -log-level=debug
+
+
+
+vault auth enable approle
